@@ -2,10 +2,8 @@ package com.stephenshen.ssregistry.service;
 
 import com.stephenshen.ssregistry.model.InstanceMeta;
 
-import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
-import java.util.stream.Collectors;
 
 /**
  * Interface of registry service
@@ -26,5 +24,4 @@ public interface RegistryService {
     long renew(InstanceMeta instance, String... services);
     Long version(String service);
     Map<String, Long> versions(String... services);
-
 }
